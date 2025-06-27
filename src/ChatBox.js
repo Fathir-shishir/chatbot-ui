@@ -19,14 +19,17 @@ function ChatBox() {
     setIsLoading(true);
 
     try {
+      // Send the user's query to the Flask backend
       const response = await axios.post("http://localhost:5000/ask", { query: userQuery });
 
-      setConversationHistory((prev) => [
-        ...prev,
+      // Update the conversation history with the user's message and the chatbot's response
+      setConversationHistory((prevHistory) => [
+        ...prevHistory,
         { isUser: true, message: userQuery },
         { isUser: false, message: response.data.answer }
       ]);
 
+      // Clear the input field
       setUserQuery("");
     } catch (error) {
       console.error("Error sending message:", error);
@@ -38,7 +41,8 @@ function ChatBox() {
 
   const handleReset = async () => {
     try {
-      await axios.post("http://localhost:5000/reset");
+      await axios.post("http://localhost:5000/reset", {}, { withCredentials: true });
+
       setConversationHistory([]);
     } catch (error) {
       console.error("Error resetting conversation:", error);
