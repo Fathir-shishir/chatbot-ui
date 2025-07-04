@@ -21,9 +21,9 @@ function ChatBox() {
 
 
   const suggestedQuestions = [
-    "What are your opening hours?",
-    "How do I apply for a job?",
-    "Where is the nearest office?",
+    "What is NACR?",
+    "How to make a service reques?",
+    "My device is quarantined! What must I do?",
   ];
 
   const funFacts = [
