@@ -397,3 +397,57 @@ body, html, #root {
 }
 
 
+
+
+
+.chatbox.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.chatbox.dark-mode .chatbox-header,
+.chatbox.dark-mode .chatbox-body,
+.chatbox.dark-mode .input-box {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+.chatbox.dark-mode .message.bot {
+  background-color: #333;
+  color: #ddd;
+}
+
+.chatbox.dark-mode .message.user {
+  background-color: #444;
+  color: #eee;
+}
+
+.chatbox.dark-mode input[type="text"] {
+  background-color: #2a2a2a;
+  color: #eee;
+  border: 1px solid #555;
+}
+
+.chatbox.dark-mode button {
+  background-color: #555;
+  color: #eee;
+  border: none;
+  cursor: pointer;
+}
+
+.chatbox.dark-mode button:hover {
+  background-color: #777;
+}
+
+.dark-mode-toggle {
+  margin-left: 12px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  background-color: transparent;
+  border: 1px solid currentColor;
+  cursor: pointer;
+}
+
+
+
