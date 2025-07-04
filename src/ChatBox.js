@@ -22,7 +22,7 @@ function ChatBox() {
 
   const suggestedQuestions = [
     "What is NACR?",
-    "How to make a service reques?",
+    "How to make a service request?",
     "My device is quarantined! What must I do?",
   ];
 
